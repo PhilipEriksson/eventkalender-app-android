@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_activity_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/event_view_pager"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <cali.eventkalender.utils.CustomViewPager
+
+        android:id="@+id/image_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/pagerLayoutIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/eventkalenderBlue"
+        android:layout_below="@+id/image_view_pager">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

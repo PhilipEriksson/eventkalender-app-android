@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/eventkalenderBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/eventkalenderBlue</item>
+        <item name="android:actionBarSize">40dp</item>
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">38dip</item>
+    </style>
+
+    <style name="ActionBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <style name="ActionBarButtonWhite" parent="@style/ActionBarButton">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ActionBarButtonOffWhite" parent="@style/ActionBarButton">
+        <item name="android:textColor">@color/colorTransparentWhite</item>
+    </style>
+
+
+    <style name="ActionBarButtonWhiteIcon" parent="@style/ActionBarButton">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name ="android:icon">@mipmap/baseline_local_bar_white_18dp</item>
+    </style>
+
+
+
+
+</resources>

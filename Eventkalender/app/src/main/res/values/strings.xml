@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Eventkalender</string>
+    <string name="nav_events">Evenemang</string>
+    <string name="nav_nationer">Nationer</string>
+    <string name="nav_search">Sök</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="no_search_made">Sök efter Evenemang</string>
+    <string name="no_results">Inga evenemang hittades</string>
+
+
+    <string name="event_title_hint">Enter a title for the crime.</string>
+    <string name="event_title_label">Title</string>
+    <string name="event_details_label">Details</string>
+    <string name="event_solved_label">Solved</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

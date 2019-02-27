@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_fragment_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEventBlack"
+    tools:context=".fragment.EventFragment">
+
+    <RelativeLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/event_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-165dp"
+        android:background="@color/eventkalenderBlue">
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Date"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:text="Eventnamn"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/event_host_nation"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/event_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorStartBlue"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/event_summary"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/event_host_nation"
+        android:padding="20dp"
+        android:text="Beskrivning"
+        android:textColor="@color/colorGrayLight" />
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/event_summary"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/event_atmosphere_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_event_note_black_24dp" />
+
+            <TextView
+                android:id="@+id/event_atmosphere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Atmosfär"
+                android:textColor="@color/colorGrayLight"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                android:id="@+id/event_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Adress"
+                android:textColor="@color/colorGrayLight"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/event_prepurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="546dp"
+        android:background="@drawable/buttonstylenation"
+        android:text="Förköp"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
